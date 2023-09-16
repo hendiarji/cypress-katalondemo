@@ -39,6 +39,8 @@ describe("test", () => {
     cy.get(".checkbox-inline").click();
     cy.get(".col-sm-4 > :nth-child(2)").click();
     cy.get("#txt_comment").type("test test test");
+    cy.get("#txt_visit_date").type("02/02/2023");
+    cy.get("#btn-book-appointment").click();
   });
 });
 
